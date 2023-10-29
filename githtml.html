@@ -3,11 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git HTML</title>
+    <title>Esercitazione HTML&CSS GITHUB</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    </style>
 </head>
 <body>
-    
-<h1>Pagina HTML</h1>
+    <header class="header">
+        <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUvA-1X3MVTBirhe9ew3nvT2uZkDc4FXjaqQ&usqp=CAU" alt="logo">
+        <nav class="navbar">
+            <li class="title"> <strong>KTM 125</strong></li>
+            <li class="link-home">Home</li>
+                <section class="left">
+                    <li class="link">About</li>
+                    <li class="link"><a href="#contatti">Contacts</a></li>
+                    <li class="link">Shop</li>
+                </section>
+        </nav>
+    </header>
 
+    <main>
+        <form class="module">
+            <div>
+                <label for="name">Nome:</label>
+                <input 
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Il tuo nome"
+                required/>
+
+                <label for="surname">Cognome:</label>
+                <input 
+                type="text"
+                id="surname"
+                name="surname"
+                placeholder="Il tuo cognome"
+                required/>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input 
+                type="text"
+                id="email"
+                name="email"
+                placeholder="La tua email"
+                required/>
+
+                <label for="password">Password:</label>
+                <input 
+                type="text"
+                id="password"
+                name="password"
+                placeholder="La tua password"
+                required/>
+
+            </div>
+            <button class="button" type="submit">Login</button>
+        </form>
+
+        <h1>About</h1>
+        <p>Il motore KTM 125 è un motore a combustione interna che alimenta una varietà di motociclette prodotte dall'azienda austriaca KTM, specializzata nella fabbricazione di motocross, enduro, e motociclette da cross. In particolare, il motore KTM 125 è noto per le sue prestazioni ad alto regime e la sua efficienza nei segmenti di moto da cross e enduro.</p>
+    </main>
+
+    <footer class="footer">
+            <li id="contatti" class="contacts">Contacts:</li>
+        <ul class="list">
+            <li class="link"><a href="https://www.instagram.com">Instagram</a></li>
+            <li class="link"><a href="https://www.tiktok.com">TikTok</a></li>
+            <li class="link"><a href="https://www.facebook.com">Facebook</a></li>
+            <li class="link"><a href="Mailto:info@Ktm125.com">info@Ktm125.com</a> </li>
+        </ul>
+        <p class="rights">All rights reserved.</p>
+    </footer>
 </body>
 </html>
