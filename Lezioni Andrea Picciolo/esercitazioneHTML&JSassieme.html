@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercitazione</title>
+    
+</head>
+<body>
+    <div>   
+        <h1 id="h1" onmouseover="red()" onmouseleave="white()">Titolo della pagina</h1>
+        <p id="p" onmouseover="green()" onmouseleave="white()" >
+            Lorem ipsum dolor sit amet consectetur adipisicing 
+            elit. Placeat veritatis debitis veniam qui? Rerum 
+            sapiente distinctio soluta accusantium saepe dolor.
+        </p>
+        
+        <ul>
+            <li id="li1" onmouseover="yellow()" onmouseleave="white()">Elemento 1</li>
+            <li id="li2" onmouseover="orange()" onmouseleave="white()">Elemento 2</li>
+            <li id="li3" onmouseover="blue()" onmouseleave="white()">Elemento 3</li>
+            <li id="li4" onmouseover="pink()" onmouseleave="white()">Elemento 4</li>
+            <li id="li5" onmouseover="purple()" onmouseleave="white()">Elemento 5</li>
+        </ul>
+
+        <!-- Metodo di riga 55 nel file JS -->
+        <h2 id="h2" onmouseover="cambiaColore('h2', 'cyan')" onmouseleave="cambiaColore('h2', 'white')">Titolo secondo</h2>
+        
+    </div>
+
+    <!-- Button aumenta numero -->
+    <button id="bottone" onclick="schiaccia()">Premi qui per aumentare</button>
+    <div id="contatore">0</div>
+
+    <br>
+
+    <!-- Button scorri nome array -->
+    <button id="bottone2" onclick="schiaccia2()">Premi qui per i nomi</button>
+    <br>
+    <p id="contatore2"></p>
+
+    <!-- Lista numeri da fare crescente e decrescente -->
+    <ul id="list">
+        <li>32</li>
+        <li>14</li>
+        <li>56</li>
+        <li>42</li>
+        <li>24</li>
+    </ul>
+
+    <button onclick="crescente()">Ordine crescente</button>
+    <button onclick="decrescente()">Ordine decrescente</button>
+
+
+    <script src="esercitazioneHTML&JSassieme.js"></script>
+</body>
+</html>

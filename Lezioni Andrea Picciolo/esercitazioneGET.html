@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="esercitazioneGET.js"></script>
+
+</head>
+
+<body>
+    <h1>Chiamata GET</h1>
+    <!-- Button del primo metodo incompleto -->
+    <!-- <button id="bottone" onclick="schiaccia()">Clicca qui</button> -->
+    <button onclick="effettuaChiamataGET()">Clicca qui</button>
+    <div id="risultatoGET"></div>
+
+    <h2 style="text-align: center;">Login Section</h2>
+    <form method="post" action="https://jsonplaceholder.typicode.com/posts" style="display: flex; flex-direction: column;">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" style="padding-top: 5px; padding-bottom: 5px; width: 150px; border-radius: 10px; border-color: orangered;" placeholder="Username">
+        <label for="password" style="margin-top: 10px;">Password:</label>
+        <input type="password" name="password" id="password" style="padding-top: 5px; padding-bottom: 5px; width: 150px; border-radius: 10px; border-color: orangered;" placeholder="Password">
+        <button style="border-color: orangered; border-radius: 50px; width: 50px; margin-top: 10px;">Login</button>
+    </form>
+</body>
+
+</html>
+

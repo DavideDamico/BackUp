@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oggetti</title>
+    <style>
+        /* Stile per evidenziare le righe dei libri trovati */
+        .found {
+            background-color: lightgreen;
+        }
+    </style>
+
+</head>
+<body>
+
+    <form id="nuovoLibroForm" style="display: flex; flex-direction: column; width: 150px;">
+        <label for="nomeLibro">Nome Libro:</label>
+        <input type="text" id="nomeLibro" required><br><br>
+    
+        <label for="autoreLibro">Autore:</label>
+        <input type="text" id="autoreLibro" required><br><br>
+    
+        <label for="dataPubblicazione">Data di Pubblicazione:</label>
+        <input type="date" id="dataPubblicazione" required><br><br>
+    
+        <label for="pagineLibro">Numero di Pagine:</label>
+        <input type="number" id="pagineLibro" required><br><br>
+    
+        <input type="submit" value="Aggiungi Libro">
+    </form>
+    <br><br><br>
+
+    <input type="text" id="autoreInput" placeholder="Inserisci autore">
+    
+    
+    <button onclick="cercaLibro()">Cerca</button>
+
+    <table id="libreriaTable">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Autore</th>
+          <th>Data di Uscita</th>
+          <th>Numero di Pagine</th>
+        </tr>
+      </thead>
+      <tbody id="tabellaCorpo">
+    
+      </tbody>
+    </table>
+    <br><br><br>
+
+    <form id="cancellaLibroForm" style="display: flex; flex-direction: column; width: 150px;">
+        <label for="nomeLibroCancella">Nome Libro:</label>
+        <input type="text" id="nomeLibroCancella" required><br><br>
+    
+        <label for="autoreLibroCancella">Autore:</label>
+        <input type="text" id="autoreLibroCancella" required><br><br>
+    
+        <input type="submit" value="Cancella Libro">
+    </form>
+
+    <script src="index3oggetti.js"></script>
+</body>
+</html>

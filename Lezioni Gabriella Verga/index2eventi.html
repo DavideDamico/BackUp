@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index2eventi.js"></script>
+</head>
+<body>
+
+<!-- <body onload="loadElement()"> -->
+    <!-- <div id="testo" onclick="clickTesto()">Buon pomeriggio</div>  -->
+    <div id="testo">Buon pomeriggio</div><br>
+
+    <!-- Nuovo onclick dove diciamo che deve cambiare il testo
+    appena ci clicchiamo -->
+    <div id="testo2">Buon serata</div><br>
+
+    <!-- Si può sia scrivere sull'html o sul file js -->
+    <!-- <div id="onMouseEvent" onmouseover="">Passa con il mouse</div> -->
+    <div id="onMouseEvent">Passa con il mouse</div>
+
+    <br>
+    <input type="text" id="testoKey" />
+    <br>
+
+    <h2>ON CHANGE</h2>
+    <select id="mySelect" onchange="selezionaAuto()">
+        <option value="audi">Audi</option>
+        <option value="bmw">Bmw</option>
+        <option value="panda">Panda</option>
+        <option value="ferrari">Ferrari</option>
+    </select>
+    <br>
+
+    <input type="text" id="onBlur" />
+    <br>
+    <br>
+
+    <!-- aggiungendo return false dopo aggiungiUtente() ,la pagina non viene ricaricata -->
+    <!-- <form onsubmit="aggiungiUtente(); return false" > -->
+    <form onsubmit="aggiungiUtente()" >
+        Nome: <input type="text" id="name" /> <br>
+        Cognome: <input type="text" id="surname" /> <br>
+        Città di residenza: <input type="text" id="city" />
+        <br>
+        <input type="submit" value="SALVA">
+    </form>
+</body>
+</html>
